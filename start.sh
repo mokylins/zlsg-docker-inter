@@ -18,7 +18,6 @@ run()
 	nohup java $JAVA_OPTS $APP_OPTS -jar ${1}.jar >> "$(basename ${1}).log" 2>&1 &
 }
 
-
 ##########
 run "$(pwd)/dip"
 

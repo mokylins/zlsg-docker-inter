@@ -26,7 +26,7 @@ run()
 
 
 ##########
-run "$(pwd)/dip"
+#run "$(pwd)/dip"
 
 
 exit 0

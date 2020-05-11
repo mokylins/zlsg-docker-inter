@@ -1,5 +1,5 @@
 #依赖系统
-FROM openjdk:11
+FROM openjdk:8-jdk
 
 RUN mkdir -p /data
 #复制

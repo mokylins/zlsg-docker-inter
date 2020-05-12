@@ -22,11 +22,15 @@ run()
 	# | tee ./t.log   
 	#将输出内容附加到日志文件   
 	# | tee -a ./t.log
+	echo $! > "$(basename ${1}).pid"
+	#关闭
+	#PID=$(cat $(basename ${1}).pid)
+	#kill -9 $PID
 }
 
 
 ##########
-#run "$(pwd)/dip"
+run "$(pwd)/dip"
 
 
 exit 0

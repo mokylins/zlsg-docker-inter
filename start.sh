@@ -15,7 +15,7 @@
 #*********************************
 run()
 {
-	java -jar ${1}.jar
+	java -server -jar ${1}.jar
 	#nohup java $JAVA_OPTS -jar ${1}.jar >> "$(basename ${1}).log" 2>&1 &
 	#
 	#nohup java -jar ${1}.jar | tee "$(basename ${1}).log" 2>&1 &
